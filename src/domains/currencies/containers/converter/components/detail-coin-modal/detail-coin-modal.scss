@@ -1,0 +1,55 @@
+.detail-coin-modal {
+  display: flex;
+  flex-direction: column;
+
+  & h2 {
+    color: #707a8a;
+  }
+  & input {
+    align-self: flex-start;
+    color: #707a8a;
+    padding: 1rem 1rem;
+    font-size: 1rem;
+    text-decoration: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #707a8a;
+    margin-right: 1rem;
+  }
+
+  & > div {
+    display: flex;
+    flex-direction: column;
+
+    & > label {
+      padding: 1rem;
+    }
+  }
+  &-close {
+    width: 17px;
+    height: 17px;
+    border: none;
+    background-color: white;
+    position: relative;
+    align-self: flex-end;
+    cursor: pointer;
+
+    &:before,
+    &:after {
+      position: absolute;
+      content: " ";
+      height: 17px;
+      top: 0;
+      width: 2px;
+      background-color: #bababa;
+      border-radius: 5px;
+    }
+
+    &:before {
+      transform: rotate(45deg);
+    }
+    &:after {
+      transform: rotate(-45deg);
+    }
+  }
+}
