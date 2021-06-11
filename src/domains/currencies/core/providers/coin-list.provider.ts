@@ -9,7 +9,7 @@ class CoinListProvider {
   }
   get = async () => {
     const { data } = await this.apiProvider.get({ url: GET_LIST_COINS });
-    return CoinListModel.deserialize(data.data);
+    return CoinListModel.deserialize(data);
   };
 }
 

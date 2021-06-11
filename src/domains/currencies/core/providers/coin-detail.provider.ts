@@ -9,9 +9,9 @@ class CoinDetailProvider {
   }
   get = async (id: string) => {
     const { data } = await this.apiProvider.get({
-      url: `${GET_DETAIL_COIN}?id=${id}`,
+      url: `${GET_DETAIL_COIN}/${id}`,
     });
-    return CoinListModel.deserialize(data)[0];
+    return CoinListModel.deserialize([data])[0];
   };
 }
 

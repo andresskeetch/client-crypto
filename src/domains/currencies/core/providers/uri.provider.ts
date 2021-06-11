@@ -1,2 +1,2 @@
-export const GET_LIST_COINS = `https://api.coinlore.net/api/tickers/`;
-export const GET_DETAIL_COIN = `https://api.coinlore.net/api/ticker/`;
+export const GET_LIST_COINS = `http://localhost:44352/api/ListCurrency`;
+export const GET_DETAIL_COIN = `http://localhost:44352/api/DetailCurrency`;
